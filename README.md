@@ -1,6 +1,6 @@
 # IOT-Dust-Detection-System-in-The-Room
 ระบบตรวจจับฝุ่นละอองภายในห้อง จัดทำขึ้นเพื่อพัฒนาระบบตรวจจับฝุ่นละอองภายในห้อง เพื่อนำเสนอการใช้อุปกรณ์ ESP8266 และตัว Dust Sensor ในการแจ้งเตือนภัยจากฝุ่นผ่าน ทาง Line notify 
-/////////////////////////////////////////////////////////////////////////////
+
 // Sharp GP2Y1014AU0F Dust Sensor Demo
 //
 // Board Connection:
@@ -14,7 +14,7 @@
 //
 // Serial monitor setting:
 //   9600 baud
-/////////////////////////////////////////////////////////////////////////////
+
 
 // Choose program options.
 //#define PRINT_RAW_DATA
@@ -55,7 +55,6 @@ static float Voc = 0.6;
 // Use the typical sensitivity in units of V per 100ug/m3.
 const float K = 0.5;
   
-/////////////////////////////////////////////////////////////////////////////
 
 // Helper functions to print a data value to the serial monitor.
 void printValue(String text, unsigned int value, bool isLast = false) {
@@ -76,7 +75,7 @@ void printFValue(String text, float value, String units, bool isLast = false) {
   }
 }
 
-/////////////////////////////////////////////////////////////////////////////
+
 
 // Arduino setup function.
 void setup() {
